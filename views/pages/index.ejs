@@ -3,12 +3,36 @@
     <% include ../partials/head %>
 </head>
 
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  var apiKey = '<%= process.env.API_KEY %>';
+  // Initialize Firebase
+  var config = {
+    apiKey: apiKey,
+    authDomain: "hubspotfirstapp.firebaseapp.com",
+    databaseURL: "https://hubspotfirstapp.firebaseio.com",
+    projectId: "hubspotfirstapp",
+    storageBucket: "hubspotfirstapp.appspot.com",
+    messagingSenderId: "887028498069"
+  };
+  firebase.initializeApp(config);
+</script>
+
 <body>
+  <!--Add a form-->
+  <p>Post title: </p>
+  <input type="text"/>
+
+  <p>Post message: </p>
+  <input type="text"/>
+
+  <button value="Add post"/>
+
 
   <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
-    <h1>Enhem web apps are so cool</h1>
+    <h1>YOYO web apps are so cool</h1>
   </div>
 
   <p id="demo">
