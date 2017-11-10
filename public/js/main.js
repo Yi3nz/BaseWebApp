@@ -96,4 +96,5 @@ function handleMessageFormSubmit() {
   addMessage(body, title);
 
   $('#new-post-title').val('');
+  $('#new-post-body').val('');
 }
