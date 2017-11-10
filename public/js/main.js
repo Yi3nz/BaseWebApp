@@ -62,7 +62,7 @@ function initializeStreamListener() {
     if (messages) {
       Object.keys(messages).forEach(function (key) {
         const message = messages[key];
-        $('#stream').append(`<div><img src=${message.authorPic}  />
+        $('#stream').append(`<div><img src=${message.authorPic} width = '100px' />
         						  ${message.author}: ${message.body}</div>`);
       });
     }
